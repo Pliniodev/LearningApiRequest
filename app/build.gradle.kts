@@ -70,6 +70,9 @@ dependencies {
     implementation(libs.kotlin.serialization.converter)
     implementation(libs.coroutines.android)
 
+    //di
+    implementation(libs.koin.compose)
+
     //test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
