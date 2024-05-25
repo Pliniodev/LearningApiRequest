@@ -1,6 +1,7 @@
 package com.pliniodev.learningapirequest.di
 
-import com.pliniodev.learningapirequest.data.DogsRepository
+import com.pliniodev.learningapirequest.data.DogsRepositoryImpl
+import com.pliniodev.learningapirequest.domain.DogsRepository
 import org.koin.dsl.module
 
 val dataModule = module {
@@ -8,5 +9,5 @@ val dataModule = module {
     // to do this we use the get() function.
     // The get() function is a Koin function that allows you to get an instance of a class
     // that is already in the Koin container.
-    single { DogsRepository(api = get()) }
+    single<DogsRepository> { DogsRepositoryImpl(api = get()) }
 }

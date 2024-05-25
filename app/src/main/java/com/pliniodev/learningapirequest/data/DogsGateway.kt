@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface DogsGateway {
 
     @GET("/breeds/image/random")
-    suspend fun getRandomDogImage(): DogsResponse
+    suspend fun getRandomDog(): DogsResponse
 }
