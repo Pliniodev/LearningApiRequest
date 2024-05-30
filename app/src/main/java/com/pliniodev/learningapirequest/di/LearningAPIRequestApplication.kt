@@ -25,7 +25,8 @@ class LearningAPIRequestApplication : Application() {
 
             modules(
                 networkModule,
-                dataModule
+                dataModule,
+                viewModelModule,
             )
         }
     }
